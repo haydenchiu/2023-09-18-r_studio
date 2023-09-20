@@ -1,0 +1,37 @@
+---
+title: "03-directories"
+author: "Hayden Chiu"
+date: "2023-09-20"
+output: html_document
+---
+
+```{r}
+mtcars
+```
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+write_csv(mtcars, "mtcars.csv")
+```
+
+
+```{r}
+#write_csv(mtcars, "data/mtcars.csv")
+#getwd()
+```
+
+
+```{r}
+#install.packages("here")
+library(here)
+```
+
+```{r}
+write_csv(mtcars, here("data/mtcars.csv"))
+```
+
+
